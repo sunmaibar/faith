@@ -6,12 +6,13 @@ import SEO from "../components/seo"
 import BackgroumndSection from "../components/Globals/BackgroundSection"
 import { FaShoppingCart, FaStore } from "react-icons/fa"
 import Info from "../components/Home/Info"
-const IndexPage = ({ data }) => (
+const AboutPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <BackgroumndSection
       img={data.img.childImageSharp.fluid}
-      title="國際賢妻良母"
+      title="小本經營薄利多銷"
+      styleClass="about-background"
     />
 
     <Info />
@@ -20,7 +21,7 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "header.jpg" }) {
+    img: file(relativePath: { eq: "about-fashion.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -30,4 +31,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default AboutPage
