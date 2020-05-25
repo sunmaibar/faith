@@ -11,13 +11,13 @@ import FeatureProducts from "../components/Home/FeatureProducts"
 import Contact from "../components/Home/Contact"
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
+    {/* <SEO title="Home" />
     <BackgroumndSection
       img={data.img.childImageSharp.fluid}
       title="國際閒妻良母"
     />
 
-    <Info />
+    <Info /> */}
     {/* <Menu items={data.menu} /> */}
     {/* <FeatureProducts /> */}
     <Contact />
