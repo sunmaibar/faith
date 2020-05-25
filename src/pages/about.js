@@ -11,7 +11,7 @@ const AboutPage = ({ data }) => (
     <SEO title="Home" />
     <BackgroumndSection
       img={data.img.childImageSharp.fluid}
-      title="小本經營薄利多銷"
+      title="商品請由臉書下單"
       styleClass="about-background"
     />
 

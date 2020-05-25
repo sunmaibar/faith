@@ -18,7 +18,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Courier New", Courier, monospace !important;
   letter-spacing: 0.25rem !important;
 }
 
@@ -64,4 +63,8 @@ h6 {
 .footer h3 {
   font-size: 1.25rem;
   color: var(--mainBrown);
+}
+.menu,
+.contact {
+  background: var(--mainGrey);
 }
