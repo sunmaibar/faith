@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => (
 
     <Info />
     <Menu items={data.menu} />
-    <FeatureProducts />
+    {/* <FeatureProducts /> */}
     <Contact />
   </Layout>
 )
