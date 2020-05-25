@@ -15,6 +15,7 @@ const IndexPage = ({ data }) => (
     <BackgroumndSection
       img={data.img.childImageSharp.fluid}
       title="國際閒妻良母"
+      styleClass="default-background"
     />
 
     <Info />
