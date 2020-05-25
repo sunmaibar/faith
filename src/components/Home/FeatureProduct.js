@@ -8,11 +8,7 @@ const FeatureProduct = ({ product }) => {
         <div className="card-body text-center">
           <h6>{product.title}</h6>
           <h6 className="text-yellow">${product.price}</h6>
-          <a
-            href={product.description.description}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
+          <a href={product.description.description} target="_blank">
             立即前往
           </a>
         </div>
