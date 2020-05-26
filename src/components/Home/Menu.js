@@ -80,7 +80,11 @@ export default class Menu extends Component {
                           <small>${node.price}</small>
                         </h6>
                       </div>
-                      <a href={node.description.description} target="_blank">
+                      <a
+                        href={node.description.description}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         立即前往
                       </a>
                       {/* <p className="text-muted">
