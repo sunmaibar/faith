@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroumndSection from "../components/Globals/BackgroundSection"
-import { FaShoppingCart, FaStore } from "react-icons/fa"
+// import { FaShoppingCart, FaStore } from "react-icons/fa"
 import Info from "../components/Home/Info"
 const AboutPage = ({ data }) => (
   <Layout>
