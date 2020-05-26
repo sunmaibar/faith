@@ -33,6 +33,7 @@ export const query = graphql`
         }
       }
     }
+
     menu: allContentfulProducts {
       edges {
         node {
@@ -43,9 +44,8 @@ export const query = graphql`
           }
           price
           category
-          date
           image {
-            fixed(width: 220, height: 220) {
+            fixed(width: 50, height: 50) {
               ...GatsbyContentfulFixed_tracedSVG
             }
           }
@@ -54,5 +54,35 @@ export const query = graphql`
     }
   }
 `
+// export const query = graphql`
+//   {
+//     img: file(relativePath: { eq: "header_1.jpg" }) {
+//       childImageSharp {
+//         fluid {
+//           ...GatsbyImageSharpFluid_tracedSVG
+//         }
+//       }
+//     }
+//     menu: allContentfulProducts {
+//       edges {
+//         node {
+//           id
+//           title
+//           description {
+//             description
+//           }
+//           price
+//           category
+//           date
+//           image {
+//             fixed(width: 220, height: 220) {
+//               ...GatsbyContentfulFixed_tracedSVG
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 
 export default IndexPage
