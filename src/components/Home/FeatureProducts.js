@@ -3,7 +3,7 @@ import FeatureProduct from "./FeatureProduct"
 import Title from "../Globals/Title"
 import { StaticQuery, graphql } from "gatsby"
 
-const getproducts = graphql`
+const getProducts = graphql`
   {
     products: allContentfulFeatureProduct {
       edges {
@@ -28,7 +28,7 @@ const getproducts = graphql`
 const FeatureProducts = () => {
   return (
     <StaticQuery
-      query={getproducts}
+      query={getProducts}
       render={data => {
         return (
           <section className="py-5">
