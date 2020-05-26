@@ -11,7 +11,8 @@ import FeatureProducts from "../components/Home/FeatureProducts"
 import Contact from "../components/Home/Contact"
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
+    <h1>Hello</h1>
+    {/* <SEO title="Home" />
     <BackgroumndSection
       img={data.img.childImageSharp.fluid}
       title="國際閒妻良母"
@@ -20,7 +21,7 @@ const IndexPage = ({ data }) => (
     <Info />
     <Menu items={data.menu} />
     <FeatureProducts />
-    <Contact />
+    <Contact /> */}
   </Layout>
 )
 
