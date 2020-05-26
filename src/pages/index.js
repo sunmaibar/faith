@@ -10,20 +10,18 @@ import Menu from "../components/Home/Menu"
 import FeatureProducts from "../components/Home/FeatureProducts"
 import Contact from "../components/Home/Contact"
 const IndexPage = ({ data }) => (
-  <h1>Hello</h1>
-  // <Layout>
+  <Layout>
+    <SEO title="Home" />
+    <BackgroumndSection
+      img={data.img.childImageSharp.fluid}
+      title="國際閒妻良母"
+    />
 
-  //   <SEO title="Home" />
-  //   <BackgroumndSection
-  //     img={data.img.childImageSharp.fluid}
-  //     title="國際閒妻良母"
-  //   />
-
-  //   <Info />
-  //   <Menu items={data.menu} />
-  //   <FeatureProducts />
-  //   <Contact />
-  // </Layout>
+    <Info />
+    <Menu items={data.menu} />
+    <FeatureProducts />
+    <Contact />
+  </Layout>
 )
 
 export const query = graphql`
