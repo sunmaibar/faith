@@ -10,7 +10,7 @@ const AboutPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <BackgroumndSection
-      // img={data.img.childImageSharp.fluid}
+      img={data.img.childImageSharp.fluid}
       title="商品請由臉書下單"
       styleClass="about-background"
     />
