@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <BackgroumndSection
-      img={data.img.childImageSharp.fluid}
+      // img={data.img.childImageSharp.fluid}
       title="國際閒妻良母"
     />
 
@@ -45,7 +45,7 @@ export const query = graphql`
           category
           date
           image {
-            fixed(width: 250, height: 250) {
+            fixed(width: 150, height: 150) {
               ...GatsbyContentfulFixed_tracedSVG
             }
           }
