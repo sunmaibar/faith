@@ -24,28 +24,7 @@ const getProducts = graphql`
     }
   }
 `
-// const getProducts = graphql`
-//   {
-//     products: allContentfulFeatureProduct {
-//       edges {
-//         node {
-//           id
-//           title
-//           price
-//           image {
-//             fluid(maxHeight: 426) {
-//               src
-//               ...GatsbyContentfulFluid_tracedSVG
-//             }
-//           }
-// description {
-//   description
-// }
-//         }
-//       }
-//     }
-//   }
-// `
+
 const FeatureProducts = () => {
   return (
     <StaticQuery
